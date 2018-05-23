@@ -1,0 +1,91 @@
+#body{
+    background-color: lightgreen;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+#mainbody{
+    
+    background-image: url("../images/unlevel.jpg");
+    background-size: cover ;
+    display: block; 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 900px;
+    width: 900px;
+}
+
+#select {
+    width: 300px;
+    margin-top: 300px;
+    margin-left: 10px;
+}
+
+#nav-mobile {
+margin-left: 50px;
+}
+
+#logo {
+    margin-right: 50px;
+}
+
+#header {
+    text-align: left;
+    font-family:'Rock Salt';
+    line-height: 50px;
+    font-size: 45px;
+    padding-top: 70px;
+    padding-left: 50px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px;
+}
+
+p {
+    text-align: left;
+    font-size: 25px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blredue, 0 0 5px; 
+}
+
+#displayTemp {
+text-align:right;
+font-size: 15px;
+color: white;
+
+}
+
+#label {
+    color: black;
+    font-size: 25px;
+}
+
+#Destination {
+    color: white;
+    font-size: 25px;
+    padding-top: 15px;
+}
+
+.page-footer{
+    background-color: green;
+}
+
+.dropdown {
+    background-color: aquamarine;
+    width: 200px;
+    height: 120px;
+    overflow: auto;
+}
+
+.view{
+    background-color: black;
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+    color: orange;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 400px;
+    line-height: 25px;
+    font-size: 20px;
+} 
