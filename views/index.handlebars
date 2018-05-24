@@ -15,3 +15,25 @@
         </div>
 
     </div>
+
+    <script>
+        var campground = $("#facilityName").val().toLowerCase();
+        var queryURL = "http://api.amp.active.com/camping/campgrounds?pstate=FL&api_key=43XJV3X7FECQ624BKMH7W9MB";
+        var cg_nameArray = [];
+        var settings = {
+            "async": true,
+            "url": "http://api.amp.active.com/camping/campgrounds?pstate=FL&api_key=43XJV3X7FECQ624BKMH7W9MB",
+            "method": "GET"
+        }
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+            for (var i = 0; i < response.length; i++) {
+                if (response[i][CAMPGROUND].toLowerCase() !== campground) {
+                    cg_nameArray.push(response[i]);
+                    $("#facilityName");
+                }
+            }
+            console.log("=======================")
+            console.log(cg_nameArray)
+        });
+    </script>
