@@ -1,38 +1,31 @@
-    <div class="container">
-        <div class="row" id="mainbody">  
-            <header class="row" id="header">
-                <h><strong>Grumpy Camper</strong></h>
-                <p> Your personal camp site ratings! </p>
-            </header>
-        </div>
-
-        <div class="dropdown">
-            <h2>Select Campground:</h2>
-            <div class="dropdown">
-                
-            </div>
-        </div>
+<div class="container">
+    <div class="row" id="mainbody">
+        <header class="row" id="header">
+            <h>
+                <strong>Grumpy Camper</strong>
+            </h>
+            <p> Your personal camp site ratings! </p>
+        </header>
     </div>
 
-    <script>
-        var campground = "Anastasia State Park"
-        //$("#facilityName").val().toLowerCase();
-        var queryURL = "https://api.amp.active.com/camping/campgrounds?pstate=FL&api_key=43XJV3X7FECQ624BKMH7W9MB";
-        var cg_nameArray = [];
-        var settings = {
-            "async": true,
-            "url": queryURL,
-            "method": "GET"
-        }
-        $.ajax(settings).done(function (response) {
-            console.log(response);
-            for (var i = 0; i < response.length; i++) {
-                if (response[i][CAMPGROUND].toLowerCase() !== campground) {
-                    cg_nameArray.push(response[i]);
-                    $("#facilityName");
-                }
-            }
-            console.log("=======================")
-            console.log(cg_nameArray)
+    <div>
+        <h5>Select a campground</h5>
+        <ul>
+            {{#each camps}}
+            <li class="camps"><a href="/api/camp/{{this}}">{{this}}</a></li> 
+            
+            {{/each}}
+        </ul>
+    </div>
+
+</div>
+
+
+
+<script>
+    $(document).ready(function() {
+        $(document).on('click', ".camps", function(e){
+            console.log(this)
         });
-    </script>
+    });
+</script>

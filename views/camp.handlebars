@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row" id="mainbody">
+        <header class="row">
+            <h5>
+                <strong>Campsite Ratings</strong>
+            </h5>
+            <p>
+                <ul>
+                    <strong>Name: </strong><a href="{{camp.campground_url}}" target="blank">{{camp.campground_name}}</a><br>
+                    <strong>City: </strong>{{camp.city}}<br>
+                    <strong>State: </strong>{{camp.state}}<br>
+                    <strong>Site number:</strong> {{camp.sitenum}}<br>
+                    <strong>Is site level: </strong>{{camp.level}}<br>
+                    <strong>Is site shaded: </strong>Is site shaded: {{camp.shade}}<br>
+                    <strong>Ground condition: </strong>{{camp.groundcover}}<br>
+                    <strong>Is there a pad: </strong>{{camp.deckpad}}<br>
+                    <strong>Is there a table: </strong>{{camp.table}}<br>
+                    <strong>How private: </strong>{{camp.privacy}}<br>
+                    <strong>Book again: </strong>{{camp.bookagain}}
+                </ul>
+            </p>
+        </header>
+    </div>

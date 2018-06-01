@@ -4,7 +4,7 @@ var connection = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "root",
-  database: "grumpy_campground_db"
+  database: "grumpy_db"
 });
 
 connection.connect(function(err) {

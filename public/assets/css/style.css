@@ -76,6 +76,7 @@ color: white;
     width: 200px;
     height: 120px;
     overflow: auto;
+    z-index: 1;
 }
 
 .view{

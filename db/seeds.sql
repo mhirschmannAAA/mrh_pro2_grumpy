@@ -1,0 +1,1 @@
+INSERT INTO campgrounds (camp_name, city, state, sitenum, level, shade, groundcover, deckpad, picnic, privacy) VALUES ('Anastasia State Park', 'St. Augustine', 'FL', 091, 'Y', 'Full', 'Hard packed', 'N', 'Y', 'Y');
